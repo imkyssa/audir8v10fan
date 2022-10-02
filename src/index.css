@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000b34;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.logo {
+  width: 150px;
+  object-fit: cover;
+}
+
+.first {
+  background: url("./Components/Assets/audi.jpg");
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  color: #fff;
+}
+
+
+.firstBottom {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.description {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.statTop {
+  font-size: 26px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.statBot {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.stat.withborder {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.scroll {
+  width: 50px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pics h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.pics hr {
+  color: #ddd;
+  margin-bottom: 30px;
+  opacity: 0.2;
+}
+
+.buttons button {
+  color: #ddd;
+}
+
+.buttons {
+  margin-left: 10px;
+  width: max-content;
+  color: #ddd;
+}
+
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 24;
+  padding: 4;
+  width: 100%;
+  height: 100vh;
+  border: none;
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: space-around;
+  outline: none
+}
+
+.modalDescription {
+  width: 500px;
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 2rem
+}
+
+.slider button {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.slider button span {
+  margin-bottom: 6px;
+}
+
+.slider img {
+  width: 800px;
+  height: 450px;
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background: #000000;
+  color: #ddd;
+  padding: 1rem;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer hr {
+  opacity: 0.2;
+  margin-top: 10px;
+}
+
+ul li a {
+  color: #ddd;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.line {
+  border-left: 1px solid #ddd;
+  height: 200px;
+  width: 0px;
+  margin-top: 50px;
+  opacity: 0.5;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buy {
+  border: 2px solid #ddd;
+  background-color: transparent;
+  color: #ddd;
+  padding: 15px 50px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+.buy:hover {
+  background: #ddd;
+  color: #000b34;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #323a58;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b1741;
+}
